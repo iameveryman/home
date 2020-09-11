@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/satisfaction-survey-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>FCC: Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+
+
+      <header>
+      <h1 id="title" class="center-text">Customer Satisfaction Survey</h1>
+      </header>
+
+      <div class="top-card">
+        <p id="description" class="description">
+        I am so proud to have you as a loyal client. I am always striving not only to provide top-notch service, but to find ways to better satisfy your needs.  Please take a few moments to complete this survey so that I can get a sense of where I'm excelling and where I may need to improve. Thanks so much!
+        </p>
+
+        <p class="signature center-text">-Jennifer</p>
+      </div>
+
+      <div class="form-div">
+        <form id="survey-form">
+          <div class="form-input">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+          </div>
+
+          <div class="form-input">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email address" required>
+          </div>
+
+          <div class="form-input">
+            <label for="contact-number" id="contact-number-label">Contact Number <span class="note">(optional)</span></label>
+            <input type="tel" id="contact-number" name="contact-number" class="form-control" placeholder="(***) ***-****">
+          </div>
+
+        <!--This is for satisfying requirements of the challenge and will be commented out for use with clients-->
+          <div class="form-input">
+            <label for="age" id="number-label">Age <span class="note">(optional)</span></label>
+            <input type="number" name="age" id="number" min="1" max="99" class="form-control" placeholder="Age">
+          </div>
+
+          <div class="form-input">
+            <p>How frequently do you use my services?</p>
+            <select name="frequency" id="dropdown" class="form-control" required>
+              <option disabled selected value>Select Frequency</option>
+              <option value="weekly">Weekly</option>
+              <option value="biweekly">Bi-weekly</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </div>
+
+            <div class="form-input">
+              <p>How satisfied are you with my services?</p>
+              <label>
+                <input type="radio" name="satisfaction" value="very-satisfied" class="input-radio" checked>Very Satisfied
+              </label>
+              <label>
+                <input type="radio" name="satisfaction" value="somewhat-satisfied" class="input-radio">Somewhat Satisfied
+              </label>
+              <label>
+                <input type="radio" name="satisfaction" value="somewhat-dissatisfied" class="input-radio">Somewhat Dissatisfied
+              </label>
+              <label>
+                <input type="radio" name="satisfaction" value="very-dissatisfied" class="input-radio">Very Dissatisfied
+              </label>
+            </div>
+
+            <div class="form-input">
+              <p>In what areas could I improve?  <span class="note">(Select all the apply)</span>
+              </p>
+              <label>
+                <input type="checkbox" name="improvements" value="promptness" class="input-checkbox">Promptness
+              </label>
+              <label>
+                <input type="checkbox" name="improvements" value="courtiousness" class="input-checkbox">Courtiousness
+              </label>
+              <label>
+                <input type="checkbox" name="improvements" value="attention-to-detail" class="input-checkbox">Attention to detail
+              </label>
+              <label>
+                <input type="checkbox" name="improvements" value="speed" class="input-checkbox">Speed
+              </label>
+              <label>
+                <input type="checkbox" name="improvements" value="variety-of-services" class="input-checkbox">Variety of services
+              </label>
+              <label>
+                <input type="checkbox" name="improvements" value="frequency-of-service" class="input-checkbox">Frequency of service
+              </label>
+            </div>
+
+            <div class="form-input">
+              <p>Any additional comments or suggestions?</p>
+              <textarea name="suggestions" id="suggestions" class="input-textarea" placeholder="Please take a moment to let me know if you have anything else to add."></textarea>
+            </div>
+
+            <div class="form-input">
+              <button type="submit" id="submit"   class="submit-button">
+              Submit
+              </button>
+            </div>
+        </form>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy; <strong>iameveryman</strong> 2020</p>
+    </footer>
+  </body>
+</html>
